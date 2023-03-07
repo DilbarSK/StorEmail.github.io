@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--start styling-->
+    <link rel="stylesheet" href="../assest/bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!--end styling-->
+
+    <script src="script/javascript.js" defer></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 data-entry">
+                <h1>Enter DATA</h1>
+                <form id="form">
+                    <div class="form-row">
+
+                        <div class="form-group col-md-11">
+                            <label for="input-subject">Subject</label>
+                            <input type="text" class="form-control" id="input-subject">
+                        </div>
+
+                        <div class="form-group col-md-11">
+                            <label for="input-username">Username</label>
+                            <input type="text" class="form-control" id="input-username">
+                        </div>
+
+                        <div class="form-group col-md-11">
+                            <label for="input-email">Email</label>
+                            <input type="text" class="form-control" id="input-email">
+                        </div>
+
+                        <div class="form-group col-md-11">
+                            <label for="input-password">Password</label>
+                            <input type="password" class="form-control" id="input-password">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="submit">Submit Data</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-9">
+                <div class="row top-row bg-primary p-1">
+
+                    <div class="col-md-7">
+                        <div class="input-group bg-white">
+                            <input type="search" class="form-control rounded" placeholder="Search" id="search-input"/>
+                            <button type="button" class="btn btn-outline-primary">search</button>
+                        </div>
+                    </div>
+                    <div class="col-md-5 info ">
+                        <span id="total-records" class="bg-white p-2 text-black">dfd</span>
+                    </div>
+                    <div class="col-md-12 mt-3">
+                            <span class=" w-25" id="page-details">page no 4 out of 13 </span>
+                            <select class="w-75 ms-5" id="select-box">
+                                <option value="5" >5</option>
+                                <option value="10" selected>10</option>
+                                <option value="15">15</option>
+                            </select>
+                    </div>
+                </div>
+                <!--top row ended-->
+                <div class="row table-row">
+                    <table class="table caption-top">
+                        <caption>
+                            List of users
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Subject</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">password</th>
+                                <th scope="col">Date/time</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="records">
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <!--container-fluid .row end-->
+
+        <nav id="pagination-box">
+            <ul class="pagination" id="pagination" dis>
+                <!-- <li class="page-item disabled">
+                    <span class="page-link">Previous</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                    <span class="page-link">
+                        2
+                        <span class="sr-only">(current)</span>
+                    </span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li> -->
+            </ul>
+        </nav>
+    </div>
+
+
+</body>
+
+</html>
